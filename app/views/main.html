@@ -1,0 +1,147 @@
+<html lang="en" ng-app="tienda">
+
+    <head>
+        
+        <title>#{get 'Inicio | Casa de Mascotas ' /}</title>
+        <meta charset="${_response_encoding}">
+
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        
+
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    </head><!--/head-->
+    <body>
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        </script> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <!--load font awesome-->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        
+        
+        #{stylesheet src: "main.css"/}
+       #{stylesheet src: "animate.css"/}
+       #{stylesheet src: "bootstrap.min.css"/}
+       #{stylesheet src: "font-awesome.min.css"/}
+       #{stylesheet src: "prettyPhoto.css"/}
+       #{stylesheet src: "responsive.css"/}
+       #{stylesheet src: "price-range.css"/}
+       #{stylesheet src: "main_1.css"/}
+       #{script src: "jquery-1.6.4.min.js"/}
+    </body>
+
+
+    <body ng-controller="main">
+        <header id="header"><!--header-->
+            <div class="header_top"><!--header_top-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="contactinfo">
+                                <ul class="nav nav-pills">
+                                    <li><a href="#"><i class="glyphicon glyphicon-earphone"></i> +52 614 127 66 25 </a></li>
+                                    <li><a href="/contactar"><i class="glyphicon glyphicon-envelope"></i> casa.de.mascotas@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="social-icons pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/hazteSocio"><i class="glyphicon glyphicon-user"></i> Hazte Socio</a></li>
+                                    <li><a href="/loginMas"><i class="glyphicon glyphicon-lock"></i> Acceso</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/header_top-->
+            <div class="header-middle"><!--header-middle-->
+                <div class="container">
+                    <div class="row">
+                        <div class="logo pull-left">
+                            <a href="/index"><img src="public/images/home/logo2.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/header-middle-->
+
+            <div class="header-bottom"><!--header-bottom-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="mainmenu pull-left">
+                                <ul class="nav navbar-nav collapse navbar-collapse">
+                                    <li><a href="/index" class="active">  <i class="glyphicon glyphicon-home"></i> Inicio</a></li>
+                                    <li class="dropdown"><a href="#">Animales por Adoptar<i class="fa fa-angle-down"></i></a>
+                                        <ul role="menu" class="sub-menu">
+                                            <li><a href="/ver">Adoptar Perros </a></li>
+                                            <li><a href="/ver">Adoptar Gatos</a></li>
+                                            <li><a href="/ver">Adoptar otras especies</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Ayudanos<i class="fa fa-angle-down"></i></a>
+                                        <ul role="menu" class="sub-menu">
+                                            <li><a href="/hazteSocio">Hazte Socio</a></li>
+                                            <li><a href="/apadrina">Apadrina</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/contactar">Contactanos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/header-bottom-->
+        </header><!--/header-->
+
+       <div id="main">
+            #{doLayout/} 
+        </div>
+        
+        <div ng-view></div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js">
+   
+</script>
+
+#{script src: "jquery.js"/}
+#{script  src: "bootstrap.min.js"/}
+#{script src: "jquery.scrollUp.min.js"/}
+#{script src: "angular.min.js"/}
+#{script src: "jquery.prettyPhoto.js"/}
+#{script src: "main.js"/}
+#{script  src: "app.js"/}
+       
+
+    </body>
+    <div class="header_top"><!--header_top-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contactinfo">
+                        <ul class="nav nav-pills">
+                            <li><a href="#"><i class="glyphicon glyphicon-earphone"></i> +52 614 127 66 25 </a></li>
+                            <li><a href="/contactar"> <i class="glyphicon glyphicon-envelope"></i> casa.de.mascotas@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-icons pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header_top-->
+</html>
+

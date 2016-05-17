@@ -1,0 +1,36 @@
+#{extends 'main.html' /}
+#{set title:'Contacto' /}
+
+<section ><!--form-->
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-2">
+					<div class="login-form"><!--login form-->
+						<h1>Contactar</h1>
+						<form action="#">
+							<h2>Datos de Contacto</h2>
+							<input type="text" placeholder="Nombre y Apellidos" />
+							<input type="email" placeholder="Correo Electronico" />
+							<input type="text" placeholder="Telefono" />
+							<input type="text" placeholder="Localidad" />
+						<h2>Mensaje</h2>
+						<input type="text" placeholder="Asunto" />
+						<textarea name="comentarios" cols="50"  rows="20" id="comentarios" placeholder=" Mensaje"></textarea>
+					</br></br>
+					<div class="col-sm-1 col-sm-offset-1">
+						<input type="checkbox" id="privasidad" name="nota" value="acepto" class="linea" >
+					</div> </br>
+					<label>He leido el
+						<a href="" onclick="alert('Política de Protección de Datos de Carácter Personal    Con fundamento en los articulos 15 y 16 de la Ley Federal de Protección de Datos Personales en Posesión de Particulares hacemos de su conocimiento de que Casa de Mascotas - Adopciones es responsable de recabar sus datos personales, del uso que se le de a los mismos y de su proteccion. Su informacion personal sera utilizada para proveer los servicios referentes a las adopciones de mascotas. '); return false;"> aviso </a>
+						de privasidad
+					</label>
+					<button type="submit" name="aceptar" class="btn btn-default">Enviar</button>
+				</form>
+			</div><!--/login form-->
+		</div>
+	</div>
+</div>
+</div>
+
+</section><!--/form-->

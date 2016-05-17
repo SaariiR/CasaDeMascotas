@@ -1,0 +1,56 @@
+#{extends 'main.html' /}
+#{set title:'apadrina' /}
+
+<section ><!--form-->
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-2">
+					<div class="login-form"><!--login form-->
+						<h1>Formulario de Apadrinamiento - Casa de Mascota Adopciones</h1>
+						<form action="#">
+							<h2>Quiero apadrinar a: </h2>
+							<input type="text" placeholder="Nombre del animal" />
+
+					                <img src="public/images/home/logoCh.png" alt="" width="460px" height="200px"/>
+
+							<h2>Datos de Contacto</h2>
+							<input type="text" placeholder="Nombre" />
+							<input type="text" placeholder="Apellidos" />
+							<input type="text" placeholder="Fecha de Nacimiento (DD/MM/AAAA)" />
+							<input type="email" placeholder="Correo Electronico" />
+							<input type="text" placeholder="Telefono" />
+							<h2>Datos Bancarios</h2>
+							<input type="text" placeholder="Titular" />
+							<input type="text" placeholder="Cuenta" />
+							<h2>Periodicidad</h2>
+							<div class="col-sm-5 col-sm-offset-1">
+								<select>
+									<option value="mensual">Mensual</option>
+									<option value="trimestral">Trimestral</option>
+									<option value="semestral">Semestral</option>
+									<option value="anual">Anual</option>
+								</select>
+							</div >
+						</br></br></br></br></br>
+						<h2>Aportacion</h2>
+						<input type="text" placeholder="$      .00"  />
+						<h2>Comentarios</h2>
+						<textarea name="comentarios" cols="50"  rows="5" id="comentarios"></textarea>
+					</br></br>
+					<div class="col-sm-1 col-sm-offset-1">
+						<input type="checkbox" id="privasidad" name="nota" value="acepto" class="linea" >
+					</div> </br>
+					<label>He leido el
+						<a href="" onclick="alert('Política de Protección de Datos de Carácter Personal    Con fundamento en los articulos 15 y 16 de la Ley Federal de Protección de Datos Personales en Posesión de Particulares hacemos de su conocimiento de que Casa de Mascotas - Adopciones es responsable de recabar sus datos personales, del uso que se le de a los mismos y de su proteccion. Su informacion personal sera utilizada para proveer los servicios referentes a las adopciones de mascotas. '); return false;"> aviso </a>
+						de privasidad
+					</label>
+					<button type="submit" name="aceptar" class="btn btn-default">Enviar</button>
+				</form>
+			</div><!--/login form-->
+		</div>
+	</div>
+</div>
+</div>
+
+</section><!--/form-->

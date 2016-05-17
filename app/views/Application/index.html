@@ -1,0 +1,192 @@
+#{extends 'main.html' /}
+#{set title:'Inicio | Casa de Mascotas ' /}
+
+<section id="slider"><!--slider-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#slider-carousel" data-slide-to="1"></li>
+						<li data-target="#slider-carousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="col-sm-6">
+								<h1><span>Casa de Mascotas</span></h1>
+								<h2>te presenta a</h2>
+								<p>tu futuro/a compañero/a, aquel que te será fiel durante toda su vida y que siempre te demostrará cariño. Elige bien y elige con responsabilidad. Todos ellos se merecen un futuro mejor. </p>
+							</div>
+							<div class="col-sm-6">
+								<img src="public/images/home/perros.jpg" alt="" width="500px" height="400px"/>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-sm-6">
+								<h1><span>Casa de Mascotas</span></h1>
+								<h2>Se encarga de</h2>
+								<p>difundir a nuestros animales para encontrarles adoptantes y al mismo tiempo ayudamos a otras protectoras como la nuestra para ayudarlos en la misma tarea. </p>
+							</div>
+							<div class="col-sm-6">
+								<img src="public/images/home/gatos.jpg" alt="" width="500px" height="400px"/>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-sm-6">
+								<h1><span>Adopta</span></h1>
+								<h2>y salva a un animal. No compres una mascota y no la abandones. Es un ser vivo con sentimientos. Ellos nunca lo harían.</h2>
+							</div>
+							<div class="col-sm-6">
+								<img src="public/images/home/otros.jpg"  alt="" width="500px" height="400px"/>
+							</div>
+						</div>
+					</div>
+					<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+						<i class="glyphicon glyphicon-chevron-left"></i>
+					</a>
+					<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+						<i class="glyphicon glyphicon-chevron-right"></i>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section><!--/slider-->
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="left-sidebar">
+					<h2> Ayudanos </h2>
+					<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+						<div class="productinfo text-center">
+							<div class="panel-heading">
+								<h3 class="panel-title">Dona con Transferencia Bancaria</h3>
+								<p> Envía una transferencia bancaria a favor de:</p>
+								<h5 class="panel-title">CasadeMascotas-Adopciones</h5>
+								<h5 class="panel-title">CUENTA IBAN:</h5>
+								<p> ES21 2038 1098 09 6000885421</p>
+								<h5 class="panel-title">CÓDIGO SWIFT/BIC:</h5>
+								<p> ­CAHMESMMXXX</p>
+							</p>
+						</div>
+					</div>
+				</div><!--/category-products-->
+				<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+					<div class="productinfo text-center">
+						<div class="panel-heading">
+							<h3 class="panel-title">PAYPAL</h3>
+							<p> Dona con el botón de PAYPAL</p>
+							<h5 class="panel-title">ayudaCasadeMascotas­@gmail.com</h5>
+							<p></p>
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="VQ2X5WEXQAQSA">
+								<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+								<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+							</form>
+						</div>
+					</div>
+				</div><!--/category-products-->
+
+			</div>
+		</div>
+		<div class="col-sm-9 padding-right">
+						<div class="recommended_items"><!--recommended_items-->
+							<h2 class="title text-center">Ayuda Urgente</h2>
+							<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="item active">
+										<div class="col-sm-4">
+											<div class="product-image-wrapper">
+												<div class="single-products">
+													<div class="productinfo text-center">
+														<img src="images/home/recommend1.jpg" alt="" />
+														<h2>$56</h2>
+														<p>Easy Polo Black Edition</p>
+														<a href="/verMas" class="btn btn-default add-to-cart"><i class="fa fa-paw"></i>Ver</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="product-image-wrapper">
+												<div class="single-products">
+													<div class="productinfo text-center">
+														<img src="images/home/recommend2.jpg" alt="" />
+														<h2>$56</h2>
+														<p>Easy Polo Black Edition</p>
+														<a href="/verMas" class="btn btn-default add-to-cart"><i class="fa fa-paw"></i>Ver</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="product-image-wrapper">
+												<div class="single-products">
+													<div class="productinfo text-center">
+														<img src="images/home/recommend3.jpg" alt="" />
+														<h2>$56</h2>
+														<p>Easy Polo Black Edition</p>
+														<a href="/verMas" class="btn btn-default add-to-cart"><i class="fa fa-paw"></i>Ver</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-sm-4">
+											<div class="product-image-wrapper">
+												<div class="single-products">
+													<div class="productinfo text-center">
+														<img src="images/home/recommend1.jpg" alt="" />
+														<h2>$56</h2>
+														<p>Easy Polo Black Edition</p>
+														<a href="/verMas" class="btn btn-default add-to-cart"><i class="fa fa-paw"></i>Ver</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="product-image-wrapper">
+												<div class="single-products">
+													<div class="productinfo text-center">
+														<img src="images/home/recommend2.jpg" alt="" />
+														<h2>$56</h2>
+														<p>Easy Polo Black Edition</p>
+														<a href="/verMas" class="btn btn-default add-to-cart"><i class="fa fa-paw"></i>Ver</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="product-image-wrapper">
+												<div class="single-products">
+													<div class="productinfo text-center">
+														<img src="images/home/recommend3.jpg" alt="" />
+														<h2>$56</h2>
+														<p>Easy Polo Black Edition</p>
+														<a href="/verMas" class="btn btn-default add-to-cart"><i class="fa fa-paw"></i>Ver</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a class="left recommended-item-control"  href="#recommended-item-carousel" data-slide="prev">
+									<i class="glyphicon glyphicon-menu-left"  ></i>
+								</a>
+								<a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+									<i class="glyphicon glyphicon-menu-right" ></i>
+								</a>
+							</div>
+						</div><!--/recommended_items-->
+
+			
+		</div>
+	</div>
+</div>
+</section>
