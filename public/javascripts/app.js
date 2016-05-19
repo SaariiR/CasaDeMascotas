@@ -1,4 +1,4 @@
-var tienda = angular.module('tienda', []);
+var casadeMascotas = angular.module('casadeMascotas', []);
 
 
 tienda.config(function($routeProvider) {

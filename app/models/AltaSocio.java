@@ -1,11 +1,17 @@
 package models;
 
+
+import javax.persistence.Entity;
+
+import play.db.jpa.Model;
 /**
  *
  * @Rebeca Sarahi Guzman Robles 244645
  * @author Sara Rodriguez Soto 262002
  *
  */
+
+@Entity
 public class AltaSocio extends Model{
 
 // DATOS DE CONTACTO
@@ -17,8 +23,8 @@ public class AltaSocio extends Model{
 //DATOS BANCARIOS
     public String titular;
     public int cuenta;
-// PERIOCIDAD
-//public String Mensual ,trimestral , semestral , anual;
+// PERIOCIDAD ya sea mensual , semestral , trimestral o anual
+public String periocidad;
 // APORTACION
     public int cantidad;
 // COMENTARIOS
@@ -43,10 +49,10 @@ public class AltaSocio extends Model{
     }
 
 
-    /*@Override
+    @Override
      public String toString() {
-     return email;
-     }*/
+     return nombre;
+     }
 }
 
 

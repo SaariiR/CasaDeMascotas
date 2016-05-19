@@ -4,7 +4,11 @@ import play.*;
 import play.mvc.*;
 import java.util.*;
 
-//import models.*;
+import models.AltaSocio;
+import models.Apadrina;
+import models.Contactar;
+import models.MascotaGatos;
+import models.MascotaPerros;
 
 public class Application extends Controller {
 

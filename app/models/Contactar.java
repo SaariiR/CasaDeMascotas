@@ -1,11 +1,16 @@
 package models;
 
+
+import javax.persistence.Entity;
+
+import play.db.jpa.Model;
 /**
  *
  * @Rebeca Sarahi Guzman Robles 244645
  * @author Sara Rodriguez Soto 262002
  *
  */
+@Entity
 public class Contactar extends Model {
 
     public String nombreApe;

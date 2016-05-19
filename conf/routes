@@ -4,6 +4,7 @@
 
 # Home page
 GET     /index                                   Application.index
+GET     /                                        Application.index
 GET     /apadrina                                Application.apadrina
 GET     /contactar                               Application.contactar
 GET     /hazteSocio                              Application.hazteSocio
