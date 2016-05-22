@@ -1,11 +1,11 @@
 package models;
 
-
-import javax.persistence.Entity;
+import javax.persistence.*;
+import play.data.validation.*;
 import play.db.jpa.Model;
 /**
  *
- * @Rebeca Sarahi Guzman Robles 244645
+ * @author Rebeca Sarahi Guzman Robles 244645
  * @author Sara Rodriguez Soto 262002
  *
  */

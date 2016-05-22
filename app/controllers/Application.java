@@ -1,14 +1,16 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
-import java.util.*;
-
 import models.AltaSocio;
-import models.Apadrina;
-import models.Contactar;
-import models.MascotaGatos;
-import models.MascotaPerros;
+import play.data.validation.*;
+import play.mvc.*;
+
+
+/**
+ *
+ * @author Rebeca Sarahi Guzman Robles 244645
+ * @author Sara Rodriguez Soto 262002
+ *
+ */
 
 public class Application extends Controller {
 
@@ -25,7 +27,8 @@ public class Application extends Controller {
     }
   
     public static void hazteSocio(){
-     render();
+            
+        render();
     }
   
     public static void loginMas(){
@@ -40,6 +43,8 @@ public class Application extends Controller {
      render();
     }
   
-    
 
+
+    
+    
 }
