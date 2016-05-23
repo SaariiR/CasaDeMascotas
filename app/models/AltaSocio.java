@@ -18,36 +18,36 @@ public class AltaSocio extends Model{
 
 // DATOS DE CONTACTO
     @Required 
-    public String nombre;
+    public String nombre = null;
     @Required 
-    public String apellidos;
+    public String apellidos = null;
     @Required
-    public String fechaDeNacimiento;
+    public String fechaDeNacimiento = null;
     @Required
-    public String usuario;
+    public String usuario = null;
     @Required
-    public String clave;
+    public String clave = null;
     @Required
     @Email
-    public String email;
+    public String email = null;
     @Required
     @Phone 
-    public int telefono;
+    public int telefono = 0;
 //DATOS BANCARIOS
     @Required
-    public String titular;
+    public String titular ;
     @Required
-    public int cuenta;
+    public int cuenta = 0;
 // PERIOCIDAD ya sea mensual , semestral , trimestral o anual
     @Required
-    public String periocidad;
+    public String periocidad = null;
 // APORTACION
     @Required
-    public int cantidad;
+    public int cantidad = 0 ;
 // COMENTARIOS
     @Required
     @MaxSize(500)
-    public String comentarios;
+    public String comentarios = null;
 
     public AltaSocio(String nombre, String apellidos, String fechaDeNacimiento,
             String usuario, String clave,
@@ -61,21 +61,18 @@ public class AltaSocio extends Model{
         this.clave = clave;
         this.email = email;
         this.telefono = telefono;
-        this.titular = titular ;
+        this.titular = titular;
         this.periocidad = periocidad;
+        this.cantidad = cantidad;
         this.cuenta= cuenta;
         this.comentarios = comentarios;
     }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
-    
-
-    @Override
-     public String toString() {
-     return nombre;
-     }
+//
+//
+//    @Override
+//     public String toString() {
+//     return nombre;
+//     }
 }
 
 

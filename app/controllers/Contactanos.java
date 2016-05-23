@@ -2,6 +2,7 @@
 package controllers;
 import models.Contactar;
 import play.*;
+import play.db.jpa.Model;
 import play.mvc.*;
 /**
  *
@@ -9,6 +10,6 @@ import play.mvc.*;
  * @author Sara Rodriguez Soto 262002
  *
  */
-public class Contactanos extends CRUD{
+public class Contactanos extends Model{
     
 }

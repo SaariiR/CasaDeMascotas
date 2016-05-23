@@ -3,6 +3,7 @@ package controllers;
 
 import models.Apadrina;
 import play.*;
+import play.db.jpa.Model;
 import play.mvc.*;
 /**
  *
@@ -10,6 +11,6 @@ import play.mvc.*;
  * @author Sara Rodriguez Soto 262002
  *
  */
-public class Apadrinar extends CRUD{
+public class Apadrinar extends Model{
     
 }

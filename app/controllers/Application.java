@@ -26,8 +26,15 @@ public class Application extends Controller {
      render();
     }
   
-    public static void hazteSocio(){
+    public static void hazteSocio(String nombre, String apellidos, String fechaDeNacimiento,
+            String usuario, String clave,
+            String email, int telefono, String titular, int cuenta, String periocidad,
+            int cantidad, String comentarios){
             
+        AltaSocio socio = new AltaSocio(nombre, apellidos, fechaDeNacimiento, usuario, clave,
+            email,  telefono,  titular,  cuenta, periocidad,  cantidad, comentarios);
+        socio.save();
+       
         render();
     }
   

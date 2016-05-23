@@ -2,6 +2,7 @@
 package controllers;
 
 import models.AltaSocio;
+import play.db.jpa.Model;
 
 /**
  *
@@ -10,7 +11,7 @@ import models.AltaSocio;
  *
  */
 //@CRUD.For(AltaSocio.class)
-public class AltaSocios extends CRUD{
+public class AltaSocios extends Model{
 
         
 }

@@ -8,21 +8,21 @@
 				<div class="col-sm-5 col-sm-offset-2">
 					<div class="login-form"><!--login form-->
 						<h1>Formulario de Alta de Socio - Casa de Mascota Adopciones</h1>
-						<form action="#">
+						<form action="@{Application.hazteSocio()}">
 							<h2>Datos de Contacto</h2>
-							<input type="text" placeholder="Nombre" />
-							<input type="text" placeholder="Apellidos" />
-							<input type="text" placeholder="Fecha de Nacimiento (DD/MM/AAAA)" />
-                                                        <input type="text" placeholder="Usuario" />
-							<input type="password" placeholder="Contraseña" />
-							<input type="email" placeholder="Correo Electronico" />
-							<input type="text" placeholder="Telefono" />
+							<input type="text" name="nombre" placeholder="Nombre" />
+							<input type="text" name="apellidos" placeholder="Apellidos" />
+							<input type="text" name="fechaDeNacimiento" placeholder="Fecha de Nacimiento (DD/MM/AAAA)" />
+                                                        <input type="text" name="usuario" placeholder="Usuario" />
+							<input type="password" name="clave" placeholder="Contraseña" />
+							<input type="email" name="email" placeholder="Correo Electronico" />
+							<input type="text" name="telefono" placeholder="Telefono" />
 							<h2>Datos Bancarios</h2>
-							<input type="text" placeholder="Titular" />
-							<input type="text" placeholder="Cuenta" />
+							<input type="text" name="tituar" placeholder="Titular" />
+							<input type="text" name="cuenta" placeholder="Cuenta" />
 							<h2>Periodicidad</h2>
 							<div class="col-sm-5 col-sm-offset-1">
-								<select>
+								<select name="periocidad" >
 									<option value="mensual">Mensual</option>
 									<option value="trimestral">Trimestral</option>
 									<option value="semestral">Semestral</option>
@@ -31,7 +31,8 @@
 							</div >
 						</br></br></br></br></br>
 						<h2>Aportacion</h2>
-						<input type="text" placeholder="$      .00"  />
+                                                <input type="text" name="cantidad" placeholder="$    .00" />
+						
 						<h2>Comentarios</h2>
 						<textarea name="comentarios" cols="50"  rows="5" id="comentarios"></textarea>
 					</br></br>
