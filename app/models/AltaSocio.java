@@ -35,7 +35,7 @@ public class AltaSocio extends Model{
     public int telefono = 0;
 //DATOS BANCARIOS
     @Required
-    public String titular ;
+    public String titular =  null;
     @Required
     public int cuenta = 0;
 // PERIOCIDAD ya sea mensual , semestral , trimestral o anual
@@ -50,9 +50,8 @@ public class AltaSocio extends Model{
     public String comentarios = null;
 
     public AltaSocio(String nombre, String apellidos, String fechaDeNacimiento,
-            String usuario, String clave,
-            String email, int telefono, String titular, int cuenta, String periocidad,
-            int cantidad, String comentarios) {
+            String usuario, String clave, String email, int telefono, String titular, 
+            int cuenta, String periocidad, int cantidad, String comentarios) {
         
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -67,12 +66,6 @@ public class AltaSocio extends Model{
         this.cuenta= cuenta;
         this.comentarios = comentarios;
     }
-//
-//
-//    @Override
-//     public String toString() {
-//     return nombre;
-//     }
 }
 
 

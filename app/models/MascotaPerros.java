@@ -23,12 +23,12 @@ public class MascotaPerros extends Model {
     public String salud;
     public boolean urgente;
     public String descripcion;
-    public String status;
+    public String imagen;
 
     public MascotaPerros(String nombre, String desde, String sexo,
             String fechaDeNacimiento, String raza, String tamaño, String localidad,
             String situacion, String salud, boolean urgente, String descripcion,
-            String status) {
+            String imagen) {
 
         
         this.nombre = nombre;
@@ -42,11 +42,8 @@ public class MascotaPerros extends Model {
         this.salud = salud;
         this.urgente = urgente;
         this.descripcion = descripcion;
-        this.status = status;
+        this.imagen = imagen;
 
     }
 
-   /* public Mascota(String nombre, boolean urgente) {
-        this(nombre, urgente, false);
-    }*/
 }

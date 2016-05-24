@@ -1,3 +1,4 @@
+
 package models;
 
 import javax.persistence.*;
@@ -10,15 +11,13 @@ import play.db.jpa.Model;
  *
  */
 @Entity
-public class MascotaGatos extends Model {
-
-    
+public class MascotaOtros extends Model {
     public String nombre;
     public String desde;
     public String sexo;
     public String fechaDeNacimiento;
     public String raza;
-    public String tamanio;
+    public String tamaño;
     public String localidad;
     public String situacion;
     public String salud;
@@ -26,8 +25,8 @@ public class MascotaGatos extends Model {
     public String descripcion;
     public String imagen;
 
-    public MascotaGatos(String nombre, String desde, String sexo,
-            String fechaDeNacimiento, String raza, String tamanio, String localidad,
+    public MascotaOtros(String nombre, String desde, String sexo,
+            String fechaDeNacimiento, String raza, String tamaño, String localidad,
             String situacion, String salud, boolean urgente, String descripcion,
             String imagen) {
 
@@ -37,7 +36,7 @@ public class MascotaGatos extends Model {
         this.sexo = sexo;
         this.fechaDeNacimiento = fechaDeNacimiento;
         this.raza = raza;
-        this.tamanio = tamanio;
+        this.tamaño = tamaño;
         this.localidad = localidad;
         this.situacion = situacion;
         this.salud = salud;
@@ -46,6 +45,5 @@ public class MascotaGatos extends Model {
         this.imagen = imagen;
 
     }
-
 
 }

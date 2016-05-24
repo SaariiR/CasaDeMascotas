@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/play-1.3.3/Multicapa/CasadMascotas/app/controllers/Apadrinar.java</file>
             <file>file:/C:/play-1.3.3/Multicapa/CasadMascotas/app/controllers/Application.java</file>
+            <file>file:/C:/play-1.3.3/Multicapa/CasadMascotas/app/views/Application/hazteSocio.html</file>
+            <file>file:/C:/play-1.3.3/Multicapa/CasadMascotas/app/models/AltaSocio.java</file>
         </group>
     </open-files>
 </project-private>

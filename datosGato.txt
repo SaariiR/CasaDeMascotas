@@ -1,0 +1,18 @@
+INSERT INTO mascotagatos(
+            id, descripcion, desde, fechadenacimiento, imagen, localidad, 
+            nombre, raza, salud, sexo, situacion, tamanio, urgente)
+    VALUES (1, 
+            'Hache es un gato doméstico muy cariñoso y juguetón siempre está agazapado esperando que pases para llamarte la atención y así le des mimos',
+            '13-1-2015', 
+	    '1/2011', 
+	    '\gatos\hache.jpg',
+	    'Chihuahua',
+	    'Hache', 
+            'Comun Europeo', 
+	    'Buena: desparasitado, vacunado, chipado y castrado', 
+	    'Macho', 
+	    'En adopcion',
+	    'En adopcion',
+	    'Mediano',
+	    true
+	    );

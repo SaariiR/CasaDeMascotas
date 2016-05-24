@@ -1,6 +1,9 @@
 package controllers;
 
+import flexjson.JSONSerializer;
+import java.util.List;
 import models.AltaSocio;
+import models.*;
 import play.data.validation.*;
 import play.mvc.*;
 
@@ -27,14 +30,13 @@ public class Application extends Controller {
     }
   
     public static void hazteSocio(String nombre, String apellidos, String fechaDeNacimiento,
-            String usuario, String clave,
-            String email, int telefono, String titular, int cuenta, String periocidad,
-            int cantidad, String comentarios){
+            String usuario, String clave, String email, int telefono, String titular, 
+            int cuenta, String periocidad, int cantidad, String comentarios){
             
         AltaSocio socio = new AltaSocio(nombre, apellidos, fechaDeNacimiento, usuario, clave,
-            email,  telefono,  titular,  cuenta, periocidad,  cantidad, comentarios);
+                      email,  telefono,  titular,  cuenta, periocidad,  cantidad, comentarios);
         socio.save();
-       
+      
         render();
     }
   
@@ -49,9 +51,20 @@ public class Application extends Controller {
     public static void verMas(){
      render();
     }
-  
-
-
     
+     public static void getGatos() {
+        
+        List<MascotaGatos> lista = MascotaGatos.findAll();
+        
+        renderJSON(
+                    new JSONSerializer()
+                            .include("id", "nombre", "descripcion", "localidad", "imagen")
+                            .exclude("*")
+                            .serialize(lista)
+                  );   
+       
+    }
+  
+ 
     
 }
